@@ -30,6 +30,22 @@ body {
     font-size: 22px;
 }
 
+h1{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px
+}
+
+p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -55,28 +71,139 @@ body {
 
 /****** Nav ***********/
 
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
 nav img{
     width: 61.09px;
     height:19px;
-    padding-left:50px;
     padding-top:30px;
 }
 
 nav a{
-    font-family:'Raleway';
-    font-style: normal;
-    text-align: center;
     position:relative;
-    left:1146px;
-    margin-right: 69px;
-    padding-right:50px;
+    left:1000px;
+    justify-content:space-between;
+    text-decoration:none;
 }
+
+.btnhebergement{
+    border:none;
+    background-color: white;
+    margin-right:80px;
+    padding-top:10px;
+}
+.btnhebergement:hover{
+    border-top:solid;
+    color:#0065FC;
+}
+
+.btnactivites{
+    border:none;
+    background-color: white;
+    padding-top:10px;
+}
+
+.btnactivites:hover{
+    border-top:solid;
+    color:#0065FC
+}
+
+/****** Barre de recherche and Filtres ***********/
+.recherche{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location{
+    height:49px;
+    width: 50px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+.location .fa-location-dot{
+    padding-top:15px;
+    padding-left: 18px;
+    width: 14px;
+    height: 18px;
+}
+
+input{  
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    width: 147px;
+    height: 21px;
+    text-align:center;
+}
+
+input::placeholder{
+    color:black;
+}
+
+.searchbar{
+    width: 195px;
+    height: 49px;
+}
+
+.btnsearch{
+    width: 100px;
+    height: 18px;
+    color:white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 15px 16px;
+    background-color:#0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.filtres{
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+
+.btnfiltres{
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    width: 167px;
+    height: 50px;
+    background-color: white;
+}
+
+.btnfiltres:hover{
+    background-color:#DEEBFF;
+}
+
+button i{
+    position:relative;
+    right: 60px;
+    top:15px;  
+}
+
+button p{
+    position:relative;
+    bottom:18px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
 }
+
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -88,6 +215,26 @@ nav a{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-card{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.hebergements-card .card-content{
+    width: 67%;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+
+.hebergements img{
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+    align-self: stretch;
+    width: 250px;
+    height: 124px;
 }
 
 /****** Populaires ***********/
@@ -135,7 +282,32 @@ nav a{
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
 
+.activity-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 65px;
+}
+.activity-card img{
+    border-radius: 20px 20px 0px 0px;
+    width: 297px;
+    height: 380px;
+}
+
+/****** Footer ***********/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    
+}
+ul{
+    list-style: none;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
