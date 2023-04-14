@@ -93,8 +93,8 @@ ul li{
 }
 
 .btnnav{
-    padding-left: 1000px;
-    width:100%;
+    position:relative;
+    left:970px;
 }
 
 .btnhebergement{
@@ -140,7 +140,7 @@ ul li{
 .location .fa-location-dot{
     padding-top:15px;
     padding-left: 18px;
-    width: 2%;
+    width: 7%;
     height: 18px;
 }
 
@@ -149,7 +149,7 @@ input{
     font-style: normal;
     font-weight: 700;
     width: 16%;
-    height: 21px;
+    height: 4%;
     text-align:center;
 }
 
@@ -168,13 +168,11 @@ input::placeholder{
 
 .btnsearch{
     width: 8%;
-    height: 18px;
     color:white;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 98%;
     padding: 15px 16px;
     background-color:#0065FC;
     border: 1px solid #0065FC;
@@ -387,7 +385,7 @@ ul{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
     .main-container{
         min-width: 768px;
@@ -399,7 +397,8 @@ ul{
     
     }
     .btnnav{
-        padding-left: 570px;
+        position:relative;
+        left: 540px;
     }
 
     /****** Barre de recherche 1024 ***********/
@@ -423,6 +422,7 @@ ul{
     /****** Hébergements and Populaires 1024 ***********/
 
     .hebergements-and-populaires {
+        width:100%;
         flex-direction: column;
     }
 
@@ -442,14 +442,14 @@ ul{
     }
 
     .populaires-cards img {
-        width: 91px;
-        height: 146px;
+        width: 35%;
+        height: 100%;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
     .populaires-cards .card {
-        width: 265px;
+        width: 92%;
         height: 76%;
     }
 
@@ -505,12 +505,14 @@ ul{
     }
 
     .logobooki{
-        padding-left:145px;
+        position:relative;
+        left:155px;
     }
 
     .btnnav{
-        padding-top:30px;
-        padding-left:50px;
+        padding-top:25px;
+        position:relative;
+        left:8px;
     }
 
     .btnactivites:hover,
@@ -521,29 +523,38 @@ ul{
     }
 
     /****** Barre de recherche 728 ***********/
-
+    .recherche{
+        max-width:320px;
+    }
+    .location{
+        width:19%;
+        max-width: 31px;
+    }
     .location i{
         position:relative;
-        right:5px;
+        right:20%;
     }
     .btnsearch{
         visibility: hidden;
     }
 
     .searchbar{
-        width:278px;
-        padding-right:100px;
+        width: 278px;
+        max-width: 265px;
+        padding-right:90px;
     }
 
     .loupe{
         visibility: visible;
-        width:3%;
+        width:6%;
+        max-width: 49px;
+        max-height: 49px;
         height:49px;
         border: 1px solid #0065FC;
         background-color: #0065FC;
         border-radius:15px;
         position:relative;
-        right:135px;
+        right:71px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -559,15 +570,15 @@ ul{
 
     .filtres{
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        gap:3px;
-        padding-left:30px;
+        grid-template-columns:1fr;
+        gap:20px;
+        max-width:320px;
     }
 
     .btnfiltres{
-        margin-left:0px;
-        width:135px;
-        height: 50px;
+        width: 90%;
+        height: 45px;
+        max-width: 134.09px;
     }
 
     .one{
@@ -612,11 +623,13 @@ ul{
     .hebergements-card{
         display:flex;
         flex-direction: column;
-        padding-left: 11px;
+        gap:15px;
+        padding-left: 35px;
     }
 
     .hebergements-card .card{
-        width: 345px;
+        width: 100%;
+        max-width: 295px;
         height: 207px;
     
     }
@@ -632,8 +645,9 @@ ul{
     }
 
     .hebergements img{
-        width: 335px;
-        height: 124px;
+        width: 100%;
+        max-width: 335px;
+        height: 60%
     }
 
     .afficher{
